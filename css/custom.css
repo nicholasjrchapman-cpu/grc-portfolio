@@ -1,0 +1,227 @@
+/* ---------------------------------------------------------
+   LaMeisha DuBose — GRC Portfolio
+   Matched to the ldubose.com palette: near-black, indigo accent,
+   Space Grotesk display / Inter body.
+--------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:         #0A0A0F;
+  --md-primary-fg-color--light:  #13151E;
+  --md-primary-fg-color--dark:   #0A0A0F;
+  --md-primary-bg-color:         #0A0A0F;
+  --md-accent-fg-color:          #4F6EF7;
+  --md-accent-fg-color--transparent: rgba(79, 110, 247, 0.12);
+  --md-default-bg-color:         #0A0A0F;
+  --md-default-fg-color:         #F0F2FF;
+  --md-default-fg-color--light:  #6B7280;
+  --md-default-fg-color--lighter:#6B7280;
+  --md-typeset-a-color:          #4F6EF7;
+  --md-code-bg-color:            #13151E;
+  --md-code-fg-color:            #F0F2FF;
+  --md-footer-bg-color:          #0F1117;
+  --md-footer-fg-color:          #F0F2FF;
+}
+
+body, .md-typeset {
+  font-family: "Inter", -apple-system, sans-serif;
+  font-size: 0.72rem;
+  line-height: 1.7;
+  background-color: #0A0A0F;
+}
+
+.md-typeset code, .md-typeset pre, .md-typeset kbd {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+/* Space Grotesk for all display type, matching the hero/section-title style */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-header__topic,
+.md-nav__title,
+.md-tabs__link {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-size: 2.2rem;
+}
+
+/* Section headers styled like ldubose.com's .section-label + .section-title pairing:
+   an uppercase tracked accent eyebrow, then a bold display heading. */
+.md-typeset h2 {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  font-size: 1.2rem;
+  margin-top: 2.4rem;
+  padding-top: 1.6rem;
+  border-top: 1px solid #1C1F2E;
+  position: relative;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--md-default-fg-color);
+}
+
+/* Muted body copy, like .hero-sub / .about-body */
+.md-typeset p {
+  color: #C7C9D6;
+}
+
+.md-typeset strong {
+  color: var(--md-default-fg-color);
+  font-weight: 500;
+}
+
+/* Header / nav */
+.md-header {
+  background-color: rgba(10, 10, 15, 0.85);
+  box-shadow: none;
+  border-bottom: 1px solid #1C1F2E;
+}
+
+.md-tabs {
+  background-color: #0A0A0F;
+  border-bottom: 1px solid #1C1F2E;
+}
+
+/* Framework/tool pills — matches .tag styling on ldubose.com */
+.md-typeset p code {
+  background-color: #161926;
+  border: 1px solid #1C1F2E;
+  border-radius: 4px;
+  padding: 0.2em 0.6em;
+  font-size: 0.72em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #9CA3AF;
+}
+
+/* Links */
+.md-typeset a {
+  color: var(--md-accent-fg-color);
+}
+
+/* Admonitions (project "before publishing" notes) — card-like, matches .project-card border style */
+.md-typeset .admonition,
+.md-typeset details {
+  background-color: #0F1117;
+  border: 1px solid #1C1F2E;
+  border-left: 3px solid var(--md-accent-fg-color);
+  border-radius: 4px;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+/* Tables */
+.md-typeset table:not([class]) {
+  border: 1px solid #1C1F2E;
+  background-color: #0F1117;
+  font-size: 0.7rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #13151E;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) tr {
+  border-top: 1px solid #1C1F2E;
+}
+
+/* Footer */
+.md-footer {
+  background-color: #0F1117;
+  border-top: 1px solid #1C1F2E;
+}
+
+.md-footer-meta {
+  background-color: #0A0A0F;
+}
+
+/* Project card grid on the homepage — matches .project-card on ldubose.com */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.project-card {
+  display: block;
+  background-color: #0A0A0F;
+  border: 1px solid #1C1F2E;
+  border-radius: 6px;
+  padding: 20px;
+  text-decoration: none !important;
+  transition: border-color 0.15s ease;
+}
+
+.project-card:hover {
+  border-color: #2A3F9E;
+}
+
+.project-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status-live { color: #10B981; }
+.status-live .status-dot { background: #10B981; }
+.status-dev { color: #F59E0B; }
+.status-dev .status-dot { background: #F59E0B; }
+
+.project-card h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #F0F2FF;
+  margin: 0 0 8px;
+}
+
+.project-card p {
+  font-size: 12.5px;
+  color: #9CA3AF !important;
+  line-height: 1.6;
+  margin: 0 0 14px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-tags span {
+  background-color: #161926;
+  border: 1px solid #1C1F2E;
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 10.5px;
+  color: #6B7280;
+}

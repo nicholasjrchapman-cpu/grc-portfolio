@@ -1,0 +1,40 @@
+site_name: LaMeisha DuBose — GRC Portfolio
+site_description: GRC engineering portfolio and project case studies
+site_url: https://LSDubose.github.io/git-grc-portfolio/
+
+theme:
+  name: material
+  font:
+    text: Inter
+    code: IBM Plex Mono
+  palette:
+    - scheme: slate
+      primary: custom
+      accent: custom
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - css/custom.css
+
+nav:
+  - Home: index.md
+  - Templates: templates.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details

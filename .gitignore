@@ -1,0 +1,33 @@
+# --- Cloud credentials & secrets ---
+.aws/
+.aws/credentials
+*.pem
+*.key
+.env
+.env.*
+terraform.tfstate
+terraform.tfstate.backup
+*.tfvars
+tfplan.json
+.terraform/
+
+# --- Local virtual environments ---
+venv/
+.venv/
+env/
+.conda/
+
+# --- Python cache / build artifacts ---
+__pycache__/
+*.pyc
+*.pyo
+.mypy_cache/
+.pytest_cache/
+
+# --- MkDocs build output ---
+site/
+
+# --- OS / editor junk ---
+.DS_Store
+.vscode/
+.idea/
